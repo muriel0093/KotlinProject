@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela_2"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#68d9e3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tela Secundaria"
+        android:textSize="35dp"
+        />
+    <ImageView
+        android:id="@+id/icVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_voltar"
+        android:layout_marginTop="10dp"
+        />
+    <ImageView
+        android:id="@+id/icDanger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cuidado"
+        android:layout_marginTop="10dp"
+        />
+</LinearLayout>
