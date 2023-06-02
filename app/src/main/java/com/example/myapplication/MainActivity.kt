@@ -31,5 +31,9 @@ class MainActivity : AppCompatActivity() {
             val logar = Intent(this, Tela_Login::class.java)
             startActivity(logar)
         }
+        binding.icLista.setOnClickListener{
+            intent = Intent(this, listarClientes::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import android.content.Context
+import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
@@ -11,6 +12,12 @@ class DBhelper(context: Context) : SQLiteOpenHelper(context, "BASE", null, 1) {
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
+    }
+
+    fun GetText(): Cursor? {
+        val p0 = this.writableDatabase
+        val cursor = p0.rawQuery("SELECT * FROM APPBANK", null)
+        return cursor
     }
 
 }

@@ -9,10 +9,24 @@
     android:gravity="center"
     android:background="#9189AA">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TELA DE CADASTRO"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="34dp"
+        android:layout_marginBottom="50dp"
+        />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:hint="Email"
+        android:layout_marginTop="50dp"
         android:id="@+id/edName"
         android:textColor="#fff"
         android:inputType="textEmailAddress"
@@ -20,6 +34,9 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:hint="Senha"
         android:id="@+id/edSenha"
         android:textColor="#fff"
